@@ -8,6 +8,8 @@ public class MyLinkedListNode {
 	
 	private String nodeValue;
 	
+	private MyLinkedListNode child;
+	
 	MyLinkedListNode(String data) {
 		nodeValue = data;
 	}
@@ -35,7 +37,13 @@ public class MyLinkedListNode {
 	public void setNodeValue(String nodeValue) {
 		this.nodeValue = nodeValue;
 	}
-	
-	
+
+	public MyLinkedListNode getChild() {
+		return child;
+	}
+
+	public void setChild(MyLinkedListNode child) {
+		this.child = child;
+	}
 
 }
